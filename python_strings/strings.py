@@ -26,6 +26,50 @@ def symmetrical():
         
 symmetrical()
 
+ 
+def vowel_count(str):
+    
+    vowels= " aeiou"
+    
+    count = 0
+    
+    for i in  str:
+        if i in vowels:
+            count = count +1
+            
+    print("vowels found are ", count)
+    
+            
+str= "sindy"
+vowel_count(str)
+
+
+
+def find_number_of_even_numbers(numbers):
+    """Find the number of even numbers in a list of numbers"""
+    
+    count = 0
+    
+    for num in numbers:
+        if num % 2 == 0:
+            count += 1
+            
+    print(count)
+
+number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+find_number_of_even_numbers(number_list)
+
+def remove_duplicates():
+    word=["a","t","e","g","a","n","g"]
+    new=set(word)
+    print(new)
+    
+remove_duplicates()
+    
+   
+
+    
+
 
 
     
