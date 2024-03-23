@@ -44,7 +44,6 @@ str= "sindy"
 vowel_count(str)
 
 
-
 def find_number_of_even_numbers(numbers):
     """Find the number of even numbers in a list of numbers"""
     
@@ -59,6 +58,7 @@ def find_number_of_even_numbers(numbers):
 number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 find_number_of_even_numbers(number_list)
 
+
 def remove_duplicates():
     word=["a","t","e","g","a","n","g"]
     new=set(word)
@@ -67,8 +67,6 @@ def remove_duplicates():
 remove_duplicates()
     
     
-    
-
 def find_average(numbers):
    tot=sum(numbers)/len(numbers)
    print(tot)
@@ -89,16 +87,35 @@ def find_even_numbers(numbers):
 number_list = [2, 3, 4, 5, 6]
 even_numbers_list = find_even_numbers(number_list)
 print(even_numbers_list)
+
+
+def string_length():
+ string = "midrand"
+ print(len(string))
  
+string_length()
 
-   
 
+def string_length(str):
+    count =0
     
+    for i in str:
+        count +=1
+    return count
 
+str = "midrand"
 
-
+new_string = string_length(str)
+print(new_string)
     
-
     
+def uppercase_half_string():
+    string= "midrand"
     
+    midpoint= int(len(string))//2
+    
+    result = string[:midpoint] + string[midpoint:].upper()
+    print(result)
+    
+uppercase_half_string()
     
