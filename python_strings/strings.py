@@ -119,3 +119,27 @@ def uppercase_half_string():
     
 uppercase_half_string()
     
+def reverse_string():
+    string = "khanyisile"
+    
+    new_string = string[::-1]
+    print(new_string)
+    
+reverse_string()
+
+def checkString(str):
+    flag_digit = False
+    flag__letter = False
+    
+    for i in str:
+        if i.isdigit():
+            flag_digit = True
+            
+            
+        if i.isalpha():
+            flag__letter = True
+            
+    return flag__letter and flag_digit
+
+something = "this2shallpass"
+the_check= print(checkString(something))
