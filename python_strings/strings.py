@@ -66,6 +66,31 @@ def remove_duplicates():
     
 remove_duplicates()
     
+    
+    
+
+def find_average(numbers):
+   tot=sum(numbers)/len(numbers)
+   print(tot)
+   
+numbers_list=[1,2,3,4,5,6]
+find_average(numbers_list)
+
+
+def find_even_numbers(numbers):
+    even_numbers = []
+    
+    for i in numbers:
+        if i % 2 == 0:
+            even_numbers.append(i)
+            
+    return even_numbers
+
+number_list = [2, 3, 4, 5, 6]
+even_numbers_list = find_even_numbers(number_list)
+print(even_numbers_list)
+ 
+
    
 
     
